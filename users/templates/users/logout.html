@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Logout</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .logout-box {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  .logout-box h2 {
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  .logout-button {
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .logout-button:hover {
+    background-color: #e74c3c;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="logout-box">
+      <h2>Are you sure you want to log out?</h2>
+      <button class="logout-button" onclick="performLogout()">Logout</button>
+    </div>
+  </div>
+  <script>
+    function performLogout() {
+
+      alert("You have been logged out");
+      // Redirect to login page or perform other actions
+      return Redirect('./food/index/')
+   
+    }
+
+  </script>
+</body>
+</html>
